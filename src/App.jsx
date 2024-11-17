@@ -8,35 +8,45 @@ import {PatientDetails} from './pages/PatientDetails'
 import {Reports} from './pages/Reports'
 import {Ressources} from './pages/Ressources'
 import {Sidebar} from './components/Sidebar'
-import {Header} from './components/Header'
+//import {Header} from './components/Header'
 import {About} from './pages/About'
+import PrivateRoute from './PrivateRoute';
+import AuthState from './contextApi/authContext/ContextState';
  const App =()=> {
+
+
+
   return (
-    <div className="App">
+    <AuthState>
+    
       <BrowserRouter>
       <Routes>
       
-      <Route path='/' element={<Sidebar/>}>
+      
         {/* public routes */}
         <Route path='/about' element={<About/>}/>
+
         <Route path='/login' element={<Login/>}/>
         
 
         {/*  protected routes */}
+        <Route path='/' element={<Sidebar/>}>
+        
 
-        <Route index element={<Dashbord/>}/>
-        <Route path='consultations' element={<Consultation/>}/>
-        <Route path='patientdetails' element={<PatientDetails/>}/>
-        <Route path='patients' element={<Patients/>}/>
-        <Route path='reports' element={<Reports/>}/>
-        <Route path='ressources' element={<Ressources/>}/>
+        <Route index element={<PrivateRoute element={Dashbord}/>}/>
+        <Route path='consultations' element={<PrivateRoute element={Consultation}/>}/>
+        <Route path='patientdetails' element={<PrivateRoute element={PatientDetails}/>}/>
+        <Route path='patients' element={<PrivateRoute element={Patients}/>}/>
+        <Route path='reports' element={<PrivateRoute element={Reports}/>}/>
+        <Route path='ressources' element={<PrivateRoute element={Ressources}/>}/>
 
       </Route>
       </Routes>
       </BrowserRouter>
+      </AuthState>
       
       
-    </div>
+   
   );
 }
 
