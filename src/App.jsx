@@ -1,4 +1,3 @@
-import './App.css';
 import {BrowserRouter ,Routes , Route} from 'react-router-dom'
 import {Consultation} from './pages/Consultation'
 import {Dashbord} from './pages/Dashbord'
@@ -12,6 +11,7 @@ import {Sidebar} from './components/Sidebar'
 import {About} from './pages/About'
 import PrivateRoute from './PrivateRoute';
 import AuthState from './contextApi/authContext/ContextState';
+import Navbar from './components/Sidebar2';
  const App =()=> {
 
 
@@ -30,7 +30,7 @@ import AuthState from './contextApi/authContext/ContextState';
         
 
         {/*  protected routes */}
-        <Route path='/' element={<Sidebar/>}>
+        <Route path='/' element={<Navbar/>}>
         
 
         <Route index element={<PrivateRoute element={Dashbord}/>}/>

@@ -10,8 +10,8 @@ export const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar-container ${isOpen ? "open" : "closed"}`}>
-      <nav className="sidebar">
+    <div className={`sidebar-container `}>
+      <nav className={`sidebar ${isOpen ? "open" : "closed"}`}>
         <button className="toggle-button" onClick={toggleSidebar}>
           ☰
         </button>

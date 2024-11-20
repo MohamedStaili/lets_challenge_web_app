@@ -5,17 +5,32 @@
   }
   
   .sidebar {
-    background-color: #2c3e50;
+    background-color: #52489C;
     color: white;
-    width: 150px;
     transition: width 0.3s ease;
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
+  .sidebar.open {
+    width: 150px; /* Largeur standard */
+    transition: width 0.3s ease; /* Animation fluide pour l'ouverture */
+  }   
   
-  .sidebar.closed {
-    width: 60px;
+  /* Sidebar fermée (largeur réduite) */
+.sidebar.closed {
+    width: 60px; /* Réduit à une icône/menu compact */
+    transition: width 0.3s ease; /* Animation fluide pour la fermeture */
+  }
+  
+  .sidebar.closed ul li a {
+    font-size: 0; /* Cache le texte tout en affichant les icônes */
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .sidebar.closed ul li a:hover {
+    font-size: 16px; /* Optionnel : Affiche le texte au survol */
   }
   
   .sidebar ul {

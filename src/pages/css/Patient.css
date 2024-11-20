@@ -1,0 +1,35 @@
+.patients-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .patients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .patients-table th, .patients-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .patients-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .details-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .details-link:hover {
+    text-decoration: underline;
+  }
+  

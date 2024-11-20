@@ -24,7 +24,7 @@ const Reducer = (state, action) => {
       };
 
     default:
-      return state; // Return the current state for unhandled actions
+      return state; 
   }
 };
 
