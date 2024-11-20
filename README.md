@@ -3,6 +3,8 @@
 
 Ce projet est une application web pour la gestion des patients, des rapports de santé, des consultations vidéo et des détails des patients. Elle permet de suivre l'état des patients, de consulter des rapports médicaux, de gérer les demandes de consultation vidéo et bien plus encore.
 
+Ce projet entre dans le cadre de la compétition nationale "Lets challenge" organisé par l'université Hassan 2 a Settat.
+
 ## Fonctionnalités principales
 - **Liste des Patients** : Affiche une liste de tous les patients avec leurs informations principales.
 - **Détails des Patients** : Fournit des informations détaillées sur chaque patient, y compris leurs antécédents médicaux et traitements.
@@ -18,16 +20,12 @@ Ce projet est une application web pour la gestion des patients, des rapports de 
   - Chart.js : pour afficher des graphiques interactifs des statistiques des patients.
 
 - **Backend** :
-  - Node.js avec Express : pour la gestion du serveur backend.
-  - Base de données : MongoDB ou une autre base de données NoSQL.
+  - Consomme des donnees vis firebase
   - JWT : pour l'authentification des utilisateurs.
 
 ## Installation
 
 ### Prérequis
-
-- Node.js (version 14 ou supérieure)
-- npm (version 6 ou supérieure)
 
 ### Étapes d'installation
 
