@@ -48,17 +48,6 @@ Ce projet est une application web pour la gestion des patients, des rapports de 
       npm install
       ```
 
-3. Configurez votre base de données MongoDB ou la base de données choisie dans le fichier `.env` du backend :
-    ```env
-    MONGO_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    ```
-
-4. Démarrez le serveur backend :
-    ```bash
-    cd backend
-    npm start
-    ```
 
 5. Démarrez le frontend :
     ```bash
@@ -114,13 +103,6 @@ Les graphiques sont générés avec **Chart.js**.
 ## Structure du projet
 
 ```
-gestion-patients/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── .env
 └── frontend/
     ├── src/
     │   ├── components/
@@ -133,8 +115,8 @@ gestion-patients/
 
 ## Auteurs
 
-- **Votre Nom** - Développeur principal
-- **Contributeurs** - Liste des autres contributeurs
+ --STAILI MOHAMED
+
 
 ## Licence
 
