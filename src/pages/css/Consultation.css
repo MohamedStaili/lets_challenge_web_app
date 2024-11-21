@@ -1,26 +1,62 @@
 .consultation-videos-container {
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .consultation-videos-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
-  
-  .consultation-videos-table th, .consultation-videos-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .consultation-videos-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centre le contenu */
+}
+
+.consultation-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Carte responsive */
+  gap: 20px;
+  justify-content: center; /* Centre les cartes horizontalement */
+  align-items: center; /* Centre les cartes verticalement */
+  margin-top: 20px;
+}
+
+.consultation-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+  text-align: left; /* Pour un meilleur alignement du texte */
+}
+
+.consultation-card:hover {
+  transform: translateY(-5px); /* Effet de survol */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-date,
+.card-status,
+.card-doctor,
+.card-duration,
+.card-method {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Style pour chaque statut */
+.card-status.en-attente {
+  color: #f39c12; /* Jaune pour "En attente" */
+}
+
+.card-status.approuvé {
+  color: #27ae60; /* Vert pour "Approuvé" */
+}
+
+.card-status.rejeté {
+  color: #e74c3c; /* Rouge pour "Rejeté" */
+}
+
+.card-doctor,
+.card-duration,
+.card-method {
+  font-size: 0.95rem;
+  color: #555;
+}

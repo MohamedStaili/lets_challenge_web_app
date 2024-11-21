@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import './sidebar2.css'
-import { Outlet, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import { FaUserMd } from "react-icons/fa";
 import { AiFillDashboard } from "react-icons/ai";
 import { TbReportAnalytics } from "react-icons/tb";
@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
+    <div className="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light sidebarr">
       {/* Écran de chargement */}
       <div
         ref={loadingRef}
@@ -123,7 +123,7 @@ const Navbar = () => {
       <main className="flex flex-col items-center justify-center flex-1">
         <button
           onClick={() => setIsSidebarOpen(true)}
-          className="fixed p-2 text-white bg-black rounded-lg top-5 left-5"
+          className="fixed p-2 text-white bg-black rounded-lg top-5 left-5 taggle"
         >
           <svg
             className="w-6 h-6"
@@ -141,7 +141,7 @@ const Navbar = () => {
           </svg>
           <span className="sr-only">Open menu</span>
         </button>
-        <Outlet />
+        
       </main>
     </div>
   );
