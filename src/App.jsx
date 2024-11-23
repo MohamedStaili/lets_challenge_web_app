@@ -3,13 +3,12 @@ import { Consultation } from './pages/Consultation';
 import { Dashbord } from './pages/Dashbord';
 import { Login } from './pages/Login';
 import { Patients } from './pages/Patients';
-import { PatientDetails } from './pages/PatientDetails';
 import { Reports } from './pages/Reports';
-import { Ressources } from './pages/Ressources';
 import { About } from './pages/About';
 import PrivateRoute from './PrivateRoute';
 import AuthState from './contextApi/authContext/ContextState';
 import Layout from './components/Layout';
+import AssistantAI from './pages/AssistantAi';
 
 const App = () => {
   return (
@@ -32,9 +31,8 @@ const App = () => {
             <Route index element={<Dashbord />} />
             <Route path="consultations" element={<Consultation />} />
             <Route path="patients" element={<Patients />} />
-            <Route path="patientdetails" element={<PatientDetails />} />
             <Route path="reports" element={<Reports />} />
-            <Route path="ressources" element={<Ressources />} />
+            <Route path="assistantai" element={<AssistantAI />} />
           </Route>
         </Routes>
       </BrowserRouter>

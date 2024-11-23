@@ -3,9 +3,9 @@ import './sidebar2.css'
 import {Link } from "react-router-dom";
 import { FaUserMd } from "react-icons/fa";
 import { AiFillDashboard } from "react-icons/ai";
-import { TbReportAnalytics } from "react-icons/tb";
-import { MdBuildCircle } from "react-icons/md";
 import SummarizeIcon from '@mui/icons-material/Summarize';
+import { MdLocalHospital } from "react-icons/md";
+import { MdAssistant } from "react-icons/md";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -81,16 +81,17 @@ const Navbar = () => {
                 <span>Patients</span>
               </Link>
               <Link to='/reports' className="flex items-center space-x-2">
-              <SummarizeIcon size={60}/>
+              <SummarizeIcon size={30}/>
                 <span>Reports</span>
               </Link>
-              <Link to='/ressources' className="flex items-center space-x-2">
-              <MdBuildCircle size={30}/>
-                <span>Ressources</span>
-              </Link>
               <Link to='/consultations' className="flex items-center space-x-2">
-              
+              <MdLocalHospital size={30}/>
                 <span>Consultations</span>
+              </Link>
+              <Link to='/assistantai' className="flex items-center space-x-2">
+                  <MdAssistant size={30}/>
+                  <span>Assistant AI</span>
+                  
               </Link>
               
             </nav>
