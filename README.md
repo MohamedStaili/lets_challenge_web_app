@@ -114,6 +114,8 @@ Les graphiques sont générés avec **Chart.js**.
 ## Auteurs
 
  --STAILI MOHAMED
+ --KHAY ZAKARIAE 
+ --HABLOUZ NAJIB
 
 
 ## Licence
